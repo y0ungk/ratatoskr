@@ -1,7 +1,7 @@
 ratatoskr
 =========
 
-A flask microservice as a façade of external email services to allow failover to another service
+A flask microservice as a façade of external email services to allow failover
 
 ## Requirements
 
@@ -9,7 +9,14 @@ A flask microservice as a façade of external email services to allow failover t
 
 ## Usage
 
-Install the app from the root of the project directory
+Create a virtualenv from the root of the project directory
+
+```bash
+virtualenv venv
+. venv/bin/activate
+```
+
+Now, install the app
 
 ```bash
 pip install --editable .
