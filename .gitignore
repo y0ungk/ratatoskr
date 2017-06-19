@@ -1,0 +1,21 @@
+# Project files
+.idea/
+*.iml
+
+# Build artifacts
+*.egg-info/
+.eggs/
+__pycache__/
+*.py[cod]
+venv/
+
+# Test output
+.cache/
+
+# Logs
+src/logs/*.log
+
+# Misc
+.DS_Store
+*#
+*~
