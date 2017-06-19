@@ -44,7 +44,7 @@ If you need to modify dependencies, make changes in `setup.py`.
 
 ## Run tests
 
-To run all tests:
+To run all tests (recommend running inside virtualenv also):
 
 ```bash
 python setup.py test
