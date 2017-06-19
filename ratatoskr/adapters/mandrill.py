@@ -19,14 +19,7 @@ def send(data):
                 'from_name': data['from_name'],
                 'subject': data['subject'],
                 'html': data['body'],
-                'text': data['text'],
-                'attachments': [
-                    {
-                        'type': 'text/plain',
-                        'name': 'myfile.txt',
-                        'content': 'ZXhhbXBsZSBmaWxl'
-                    }
-                ]
+                'text': data['text']
             }}))
 
     return {'code':response.status_code, 'message':response.text}
