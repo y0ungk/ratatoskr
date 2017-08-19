@@ -53,8 +53,10 @@ def email():
 
     if app.config['SELECTED_SERVICE'] is 'mailgun':
         response = mailgun.send(email_request)
-    else:
+    elif app.config['SELECTED_SERVICE'] is 'mailgun':
         response = mandrill.send(email_request)
+    else:
+        response = {'code':404, 'message':'no service configured'}
 
     result = 'email sent!'
     if response['code'] is not 200:
