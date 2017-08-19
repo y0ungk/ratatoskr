@@ -2,7 +2,7 @@ import sys, logging
 from flask import Flask, request
 from jsonschema import validate, ValidationError, FormatChecker
 from html2text import html2text
-from adapters import mailgun, mandrill
+from .adapters import mailgun, mandrill
 
 app = Flask(__name__)
 app.config.from_object(__name__)  # load config from this file , ratatoskr.py
